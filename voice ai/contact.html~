@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO LEON</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header>
+        <h1>NERSISYAN FURNITURE</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a style="color: #0CBFC8;" href="#" >Contact</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="glxavor">
+    <div id="whatsapp">
+    <h1 id="whatsapp-nummer">+37477167686</h1>
+    <img id="whatsapp-img" src="img/whatsapp.png" style="width: 100px; height: 100px;" alt="whatsapp"/>
+    <div id="handy">
+    <h1 id="handy-nummer">+37477167686</h1>
+    <img id="handy-img" src="img/handy.png" style="width: 100px; height: 100px;" alt="whatsapp"/>
+    <div id="handy">
+    <h1 id="insta-name">@kahuyq_patverov89</h1>
+    <img id="insta-img" src="img/insta.png" style="width: 100px; height: 100px;" alt="whatsapp"/>
+    <div class="btn-cont">
+    <button class="copy" onclick="copyText()">Copy</button>
+    <button class="copy" onclick="copyText()">Copy</button>
+    <button class="copy" onclick="copytext()">Copy</button>
+    
+    </div>    
+    </div>
+ <footer>
+        <p>&copy; NERSISYAN FURNITURE - ARMENIA .</p>
+    </footer>
+<script src="script-contact.js"></script>
+</html>
+   
+
+</body>

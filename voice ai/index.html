@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO LEON</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>NERSISYAN FURNITURE</h1>
+        <nav>
+            <ul>
+                <li><a style="color: #0CBFC8;" href="#">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                  
+            </ul>
+          <li id="searchBtn"><a href="#">Search</a></li>
+
+        </nav>
+        <form id="searchForm" style="display: none;">
+<input type="text" id="searchInput" placeholder="Search..." value="" oninput="searchProducts()">
+
+
+    <button type="button" onclick="toggleSearch()">Close</button>
+</form>
+
+    </header>
+<script type="text/javascript">
+
+
+</script>
+    <section class="products" id="productList">
+
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="https://cb2.scene7.com/is/image/CB2/090723_Super_Furniture_Bedroom_M?wid=690&qlt=65">
+            <h2>Product 1</h2>
+            <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">$19.99</p>
+            <button class="addToCart" data-id="1">Add to Cart</button>
+        </div>
+                <!-- Product 2 -->
+        <div class="product">
+            <img src="https://cb2.scene7.com/is/image/CB2/090723_Super_Furniture_Bedroom_M?wid=690&qlt=65">
+            <h2>Product 2</h2>
+            <p>Description of Product 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">$19.99</p>
+            <button class="addToCart" data-id="1">Add to Cart</button>
+        </div>
+                <!-- Product 3 -->
+        <div class="product">
+            <img src="https://cb2.scene7.com/is/image/CB2/090723_Super_Furniture_Bedroom_M?wid=690&qlt=65">
+            <h2>Product 3</h2>
+            <p>Description of Product 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">$19.99</p>
+            <button class="addToCart" data-id="1">Add to Cart</button>
+        </div>
+                <!-- Product 4 -->
+        <div class="product">
+            <img src="https://cb2.scene7.com/is/image/CB2/090723_Super_Furniture_Bedroom_M?wid=690&qlt=65">
+            <h2>Product 4</h2>
+            <p>Description of Product 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">$19.99</p>
+            <button class="addToCart" data-id="1">Add to Cart</button>
+        </div>
+
+        
+    </section>
+
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <ul id="cartItems">
+                <!-- Cart items hwat the fuck is gojing on heill be dynamically added here using JavaScript -->
+            </ul>
+            <p>Total: $<span id="cartTotal">0.00</span></p>
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 My Shopping Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js">function searchProducts() {
+    const searchInput = document.getElementById('searchInput');
+    const searchText = searchInput.value.toLowerCase();
+    const productList = document.getElementById('productList');
+    const products = productList.getElementsByClassName('product');
+
+    for (const product of products) {
+        const productName = product.getElementsByTagName('h2')[0].innerText.toLowerCase();
+        const productDescription = product.getElementsByTagName('p')[0].innerText.toLowerCase();
+
+        if (productName.includes(searchText) || productDescription.includes(searchText)) {
+            product.style.display = 'block';
+        } else {
+            product.style.display = 'none';
+        }
+    }
+}
+
+</script>
+</body>
+<style type="text/css">
+/* Add your advanced styles here */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #377593; /* Dark Blue */
+    color: #ffffff;
+}
+
+header {
+    background-color: #094E92; /* Light Blue */
+    padding: 10px;
+    text-align: center
+    }
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+section.products .product {
+    /* ... existing styles ... */
+    display: block; /* default display */
+}
+
+section.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+section.products .product {
+    width: 300px;
+    border: 1px solid #465c6a; /* Darker Blue */
+    padding: 10px;
+    margin: 10px;
+    background-color: #315776; /* Darker Blue */
+    color: #ffffff;
+    text-align: center;
+}
+
+section.products img {
+    max-width: 100%;
+    height: auto;
+}
+.glav{
+position: absolute;
+margin-left: 10px
+}
+section.products h2 {
+    margin-bottom: 10px;
+}
+
+section.products p {
+    margin-bottom: 10px;
+}
+
+section.products .price {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.products button.addToCart {
+    background-color: #76c7a0; /* Lime Green */
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10% auto;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #76c7a0; /* Lime Green */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+</html>

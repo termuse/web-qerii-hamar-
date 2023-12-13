@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #377593; /* Dark Blue */
+    color: #ffffff;
+}
+
+header {
+    background-color: #094E92; /* Light Blue */
+    padding: 10px;
+    text-align: center
+    }
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+section.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+section.products .product {
+    width: 300px;
+    border: 1px solid #465c6a; /* Darker Blue */
+    padding: 10px;
+    margin: 10px;
+    background-color: #315776; /* Darker Blue */
+    color: #ffffff;
+    text-align: center;
+}
+
+section.products img {
+    max-width: 100%;
+    height: auto;
+}
+.glav{
+position: absolute;
+margin-left: 10px
+}
+section.products h2 {
+    margin-bottom: 10px;
+}
+
+section.products p {
+    margin-bottom: 10px;
+}
+
+section.products .price {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.products button.addToCart {
+    background-color: #76c7a0; /* Lime Green */
+    color: #ffffff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10% auto;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #76c7a0; /* Lime Green */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+    #whatsapp-nummer{
+    padding: 30px;    
+    }
+    #whatsapp-img{
+    position:absolute;   
+    left: 270px; 
+    top: 180px;
+    }
+    #handy-nummer {
+    padding: 30px;    
+    }
+    #handy-img{
+    position:absolute;   
+    left: 270px; 
+    top: 310px;
+    }
+    #insta-name {
+    padding: 30px; 
+    font-size:22px;   
+    }
+    #insta-img{
+    position:absolute;   
+    left: 270px; 
+    top: 450px;
+    }
+    .btn-cont{
+    width:10px;    
+    }
+    .copy{
+    	width: 100px;
+    	height: 40px;
+     display: inline-block;
+     margin-top: 90px;
+     position: relative;
+     left: 150px;
+     top: -380px;
+     border: 2px solid darkgreen;
+     border-radius: 20px;
+     background-color: lime;
+     font-size: 16px;
+}
+.copy:hover{
+	box-shadow: 0px 0px 15px 5px lime;
+	background: darkgreen;
+}
